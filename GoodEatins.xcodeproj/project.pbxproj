@@ -18,6 +18,7 @@
 		F4968411218D07890079069F /* RecipesSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4968410218D07890079069F /* RecipesSelectionVC.swift */; };
 		F4968415218E0D610079069F /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4968414218E0D610079069F /* RecipeCell.swift */; };
 		F49A7121218A998600BEC998 /* FoodCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49A7120218A998600BEC998 /* FoodCategoryTableViewCell.swift */; };
+		F4A884BA219123A4003E696B /* RecipeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A884B9219123A4003E696B /* RecipeDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F4968410218D07890079069F /* RecipesSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesSelectionVC.swift; sourceTree = "<group>"; };
 		F4968414218E0D610079069F /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		F49A7120218A998600BEC998 /* FoodCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		F4A884B9219123A4003E696B /* RecipeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				F49A7120218A998600BEC998 /* FoodCategoryTableViewCell.swift */,
 				F4968410218D07890079069F /* RecipesSelectionVC.swift */,
 				F4968414218E0D610079069F /* RecipeCell.swift */,
+				F4A884B9219123A4003E696B /* RecipeDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A884BA219123A4003E696B /* RecipeDetailVC.swift in Sources */,
 				F475DC672184C94A009EABF1 /* HomeVC.swift in Sources */,
 				F40CDFBE2184CD170082B294 /* DataSet.swift in Sources */,
 				F40CDFBA2184CA940082B294 /* FoodCategory.swift in Sources */,

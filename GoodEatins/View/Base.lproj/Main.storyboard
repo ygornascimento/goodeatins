@@ -131,11 +131,66 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Swg-NE-c6H" id="o3J-9v-Hrm"/>
+                        <segue destination="hTu-iX-gDa" kind="show" identifier="toRecipeSelection" id="afh-Lj-3n9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jlS-dA-TjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1765" y="-563"/>
+        </scene>
+        <!--Recipe DetailVC-->
+        <scene sceneID="ckm-qg-50c">
+            <objects>
+                <viewController id="hTu-iX-gDa" customClass="RecipeDetailVC" customModule="GoodEatins" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="flM-wz-jg3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="salad1" translatesAutoresizingMaskIntoConstraints="NO" id="HaE-Vp-hu1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="ded-ky-vYK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salmon Salad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcs-W6-pq2">
+                                <rect key="frame" x="118" y="348" width="139" height="29"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ic-dg-vZw">
+                                <rect key="frame" x="20" y="397" width="335" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tcs-W6-pq2" firstAttribute="top" secondItem="HaE-Vp-hu1" secondAttribute="bottom" constant="34" id="5pB-TR-izy"/>
+                            <constraint firstItem="HaE-Vp-hu1" firstAttribute="trailing" secondItem="gG8-YS-R5s" secondAttribute="trailing" id="BS4-zq-4zU"/>
+                            <constraint firstItem="1Ic-dg-vZw" firstAttribute="top" secondItem="tcs-W6-pq2" secondAttribute="bottom" constant="20" id="H6Y-bl-u1c"/>
+                            <constraint firstItem="gG8-YS-R5s" firstAttribute="trailing" secondItem="1Ic-dg-vZw" secondAttribute="trailing" constant="20" id="JOD-ph-Q46"/>
+                            <constraint firstItem="1Ic-dg-vZw" firstAttribute="leading" secondItem="gG8-YS-R5s" secondAttribute="leading" constant="20" id="PY0-cI-pMm"/>
+                            <constraint firstItem="1Ic-dg-vZw" firstAttribute="top" secondItem="tcs-W6-pq2" secondAttribute="bottom" constant="20" id="Q2N-2k-Gcu"/>
+                            <constraint firstItem="tcs-W6-pq2" firstAttribute="centerX" secondItem="flM-wz-jg3" secondAttribute="centerX" id="bvm-0Q-oIO"/>
+                            <constraint firstItem="1Ic-dg-vZw" firstAttribute="top" secondItem="tcs-W6-pq2" secondAttribute="bottom" constant="20" id="elx-gP-1fo"/>
+                            <constraint firstItem="tcs-W6-pq2" firstAttribute="centerX" secondItem="flM-wz-jg3" secondAttribute="centerX" id="hNg-bh-4nE"/>
+                            <constraint firstItem="tcs-W6-pq2" firstAttribute="top" secondItem="HaE-Vp-hu1" secondAttribute="bottom" constant="34" id="ljB-LU-zMt"/>
+                            <constraint firstItem="HaE-Vp-hu1" firstAttribute="top" secondItem="gG8-YS-R5s" secondAttribute="top" id="ruE-Py-l4W"/>
+                            <constraint firstItem="HaE-Vp-hu1" firstAttribute="leading" secondItem="gG8-YS-R5s" secondAttribute="leading" id="sRt-gx-noN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gG8-YS-R5s"/>
+                    </view>
+                    <connections>
+                        <outlet property="recipeImg" destination="HaE-Vp-hu1" id="re5-hq-zdS"/>
+                        <outlet property="recipeInstructions" destination="1Ic-dg-vZw" id="Q8i-4k-06w"/>
+                        <outlet property="recipeTitle" destination="tcs-W6-pq2" id="8h2-mM-17T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yeD-J7-Cs0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2526" y="-563"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AgD-ER-e2f">
@@ -158,5 +213,6 @@
     </scenes>
     <resources>
         <image name="burger6" width="966" height="725"/>
+        <image name="salad1" width="1050" height="700"/>
     </resources>
 </document>
